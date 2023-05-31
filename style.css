@@ -36,10 +36,6 @@ table tr td input{
     width: 200vw;
 }
 
-table td{
-    background-color: red;
-    width: 10px;
+.nmr{
+    text-align: center;
 }
-    table tr{
-        background-color: blue;
-    }
