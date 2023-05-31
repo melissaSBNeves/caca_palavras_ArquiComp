@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça de palavras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="content">
+
+                <div class="jogo">
+                    <table id="table">
+
+                        <!-- LINHA 1 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                         <!-- LINHA 2-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv1_ltr1"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">12</td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">16</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!-- LINHA 3-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv1_ltr2"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">12</td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">16</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!-- Linha 4 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv1_ltr2"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv12_ltr1"></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv16_ltr1"></td>
+                            <td></td>
+                            <td class="nmr">17</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="nmr">2</td>
+                            <td><input id="plv2_ltr1"></td>
+                            <td><input id="plv2_ltr2"></td>
+                            <td><input id="plv1_ltr3"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="nmr">11</td>
+                            <td><input id="plv12_ltr2"></td>
+                            <td></td>
+                            <td class="nmr">14</td>
+                            <td><input id="plv16_ltr2"></td>
+                            <td></td>
+                            <td><input id="plv17_ltr1"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv1_ltr4"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input id="plv1_ltr5"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                    <button>Verificar</button>
+                </div>
+
+                <div class="instrucao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae error, voluptatum, beatae
+                    blanditiis dicta reprehenderit hic cumque vel soluta omnis, quia praesentium. Iusto nostrum, eaque
+                    suscipit perspiciatis consectetur sapiente dolore!
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<script>
+
+
+    var listaTr = []
+
+    for (var i = 0; i <= 24; i++) {
+        table.innerHTML += `<tr id="linha${i}" class="linhas">
+            <td id="coluna1_linha${i}"></td>
+            <td id="coluna2_linha${i}"></td>
+            <td id="coluna3_linha${i}"></td>
+            <td id="coluna4_linha${i}"></td>
+            <td id="coluna5_linha${i}"></td>
+            <td id="coluna6_linha${i}"></td>
+            <td id="coluna7_linha${i}"></td>
+            <td id="coluna8_linha${i}"></td>
+            <td id="coluna9_linha${i}"></td>
+            <td id="coluna10_linha${i}"></td>
+            <td id="coluna11_linha${i}"></td>
+            <td id="coluna12_linha${i}"></td>
+            <td id="coluna13_linha${i}"></td>
+            <td id="coluna14_linha${i}"></td>
+            </tr>`
+
+    }
+
+    function criarNumeros(numero, coluna) {
+        coluna.innerHTML += `<span>${numero}</span>`
+    }
+
+
+    function criarInputs(id, coluna) {
+        coluna.innerHTML += `<input type="text" id="${id}}">`
+    }
+
+    criarNumeros(1,'coluna1_linha1')
+
+
+
+    //Palavra 1
+
+
+    // //Palavra 2
+
+
+
+
+
+
+    // function vericarLetra(input, letra, box) {
+    //     var cor = ' ';
+    //     if (input == letra) {
+    //         cor = 'green';
+    //     } else {
+    //         cor = 'red';
+    //     }
+    //     document.getElementById(box).style.borderColor = cor;
+    // }
+
+
+
+
+
+
+
+
+</script>
