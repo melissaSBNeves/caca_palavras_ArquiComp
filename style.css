@@ -1,55 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: rgb(7, 141, 117);
+    background: rgb(123, 170, 204, 0.6);
+}
 
-
-section{
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(100, 62, 188, 0.8);
+    margin-bottom: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
 
-.container{
-    width: 80%;
+section {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-.content{
+.container {
+    width: 100%;
+}
+
+.content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
 
-table tr td input{
-    width: 50px;
+table tr td input {
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
 }
 
-.instrucao{
+
+.instrucao {
     width: 30vw;
 }
 
-.jogo{
+h2{
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+.jogo {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 200vw;
 }
 
-.nmr{
+.nmr {
     text-align: center;
 }
 
-.content_mensagem{
-
+.content_mensagem {
     display: flex;
-
-
 }
 
-.container_mensagem{
+.container_mensagem {
 
     display: flex;
     width: 100%;
@@ -57,8 +80,57 @@ table tr td input{
     justify-content: center;
 }
 
-#mensagem{
-
+#mensagem {
     display: flex;
     width: 50%;
+}
+
+input {
+    /* width: 60px;
+    padding-left: 7px;
+    padding-top: 2px; */
+    border: #1A1A1A solid 1.4px;
+}
+
+h1{
+    margin-left: 4%
+}
+
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    border-radius: 10px;
+    width: 55px;
+    font-size: 20px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #643ebc;
+    box-shadow: #643ebc 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#verificar {
+    width: 100px;
+    margin-left: 3%;
+    padding: 10px;
+    margin-top: -3%;
 }

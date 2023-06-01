@@ -12,10 +12,27 @@
 <body>
 
     <section>
-        <div class="container">
-            <div class="content">
 
+        <div class="container">
+            <div class="header">
+                <h2>Cruzadinha</h2>
+                <h4>Para ler as instruções clique nos número e depois de todos os quadrados preenchidos 
+                    clique no botão verificar
+                </h4>
+            </div>
+            
+            <div class="content">
+                
                 <div class="jogo">
+                   
+                    <div class="content_mensagem">
+                        <div class="container_mensagem">
+                            <div id="mensagem">
+                            </div>
+
+                        </div>
+                    </div>
+
                     <table id="table">
 
                         <!-- LINHA 1 -->
@@ -36,7 +53,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 2-->
+                        <!-- LINHA 2-->
                         <tr>
                             <td></td>
                             <td></td>
@@ -108,7 +125,7 @@
                             <td><input id="plv10_ltr7"></td>
 
                         </tr>
-                         <!-- LINHA 6 -->
+                        <!-- LINHA 6 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -126,7 +143,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 7 -->
+                        <!-- LINHA 7 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -144,7 +161,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 8 -->
+                        <!-- LINHA 8 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -162,7 +179,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 9 -->
+                        <!-- LINHA 9 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -180,7 +197,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 10 -->
+                        <!-- LINHA 10 -->
                         <tr>
                             <td></td>
                             <td class="nmr"><button onclick="dica_4()">4</button></td>
@@ -198,7 +215,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 11 -->
+                        <!-- LINHA 11 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr1"></td>
@@ -216,7 +233,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 12 -->
+                        <!-- LINHA 12 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr2"></td>
@@ -234,7 +251,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 13 -->
+                        <!-- LINHA 13 -->
                         <tr>
                             <td class="nmr"><button onclick="dica_3()">3</button></td>
                             <td><input id="plv3_ltr1"></td>
@@ -252,7 +269,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 14 -->
+                        <!-- LINHA 14 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr4"></td>
@@ -270,7 +287,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 15 -->
+                        <!-- LINHA 15 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr5"></td>
@@ -288,7 +305,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 16 -->
+                        <!-- LINHA 16 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr6"></td>
@@ -306,7 +323,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 17 -->
+                        <!-- LINHA 17 -->
                         <tr>
                             <td></td>
                             <td><input id="plv4_ltr7"></td>
@@ -324,7 +341,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 18 -->
+                        <!-- LINHA 18 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -342,7 +359,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 19 -->
+                        <!-- LINHA 19 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -360,7 +377,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 20 -->
+                        <!-- LINHA 20 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -378,7 +395,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 21 -->
+                        <!-- LINHA 21 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -396,7 +413,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 22 -->
+                        <!-- LINHA 22 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -414,7 +431,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 23 -->
+                        <!-- LINHA 23 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -432,7 +449,7 @@
                             <td></td>
                         </tr>
 
-                         <!-- LINHA 24 -->
+                        <!-- LINHA 24 -->
                         <tr>
                             <td></td>
                             <td></td>
@@ -451,19 +468,15 @@
                         </tr>
 
                     </table>
-                    <button onclick="vericarJogo()">Verificar</button>
+
                 </div>
+
     </section>
+    <button onclick="vericarJogo()" id="verificar">Verificar</button>
 
 
-    <div class="content_mensagem">
-         <div class="container_mensagem">
-        
-            <div id="mensagem"></div>
-     
-        </div>
-    </div>
-    
+
+
 </body>
 
 </html>
@@ -471,8 +484,8 @@
 <script>
 
 
-    
-    function vericarJogo(){
+
+    function vericarJogo() {
         // Palavra 1 
         vericarLetra(plv1_ltr1.value, 'm', 'plv1_ltr1')
         vericarLetra(plv1_ltr2.value, 'e', 'plv1_ltr2')
@@ -594,168 +607,173 @@
         vericarLetra(plv17_ltr7.value, 'r', 'plv17_ltr7')
         vericarLetra(plv17_ltr8.value, 'e', 'plv17_ltr8')
     }
-   
+
 
     // input, letra, box
 
-    
+
 
     function vericarLetra(input, letra, box) {
         var cor = '';
         if (input == letra) {
             cor = 'green';
-        } else if(input == " "){
-           cor = 'white'
-        }else{
+        } else if (input == " ") {
+            cor = 'white'
+        } else {
             cor = 'red';
         }
         document.getElementById(box).style.borderColor = cor;
         document.getElementById(box).style.backgroundColor = cor;
+        document.getElementById(box).style.color = 'white';
     }
 
-    function dica_1(){
+    function dica_1() {
 
-        mensagem.innerHTML = `Essa, também conhecida como armazenamento secundário, é um tipo de memória de computador que tem a capacidade de armazenar dados de forma permanente, mesmo quando o computador é desligado. Diferentemente da memória RAM, que é volátil e perde os dados quando a energia é desligada, essa memória retém as informações a longo prazo. Essa memória é usada para armazenar permanentemente dados, programas, arquivos e outros tipos de informações no computador. Ela fornece capacidade de armazenamento em grande escala e é geralmente mais lenta em comparação com a memória RAM.`
-        
+        mensagem.innerHTML = `Essa, também conhecida como armazenamento secundário, é um tipo de memória de computador que tem a capacidade de armazenar dados de forma permanente, mesmo quando o computador é desligado. Diferentemente da memória RAM, que é volátil e perde os dados quando a energia é desligada, essa memória retém as informações a longo prazo.`
+
         style_mensagem()
     }
 
-    function dica_2(){
+    function dica_2() {
 
-mensagem.innerHTML = `É um tipo de memória de armazenamento não volátil em um computador ou dispositivo eletrônico. Ao contrário da memória RAM, essa memória mantém seus dados permanentemente, mesmo quando o dispositivo é desligado ou reiniciado. Essa memória é pré-programada durante a fabricação do dispositivo e contém informações essenciais para o funcionamento do sistema, como instruções de inicialização, firmware, configurações básicas do hardware e outros dados permanentes.
+        mensagem.innerHTML = `É um tipo de memória de armazenamento não volátil em um computador ou dispositivo eletrônico. Ao contrário da memória RAM, essa memória mantém seus dados permanentemente, mesmo quando o dispositivo é desligado ou reiniciado. Essa memória é pré-programada durante a fabricação do dispositivo e contém informações essenciais para o funcionamento do sistema, como instruções de inicialização, firmware, configurações básicas do hardware e outros dados permanentes.
  `
- style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_3(){
+    function dica_3() {
 
-mensagem.innerHTML = `Também conhecida como memória principal, é um tipo de memória volátil utilizada em computadores e outros dispositivos eletrônicos. Ela desempenha um papel fundamental no armazenamento temporário de dados e instruções que são usados pelo processador.`
+        mensagem.innerHTML = `Também conhecida como memória principal, é um tipo de memória volátil utilizada em computadores e outros dispositivos eletrônicos. Ela desempenha um papel fundamental no armazenamento temporário de dados e instruções que são usados pelo processador.`
 
-style_mensagem()
-}
+        style_mensagem()
+    }
 
-function dica_4(){
+    function dica_4() {
 
-mensagem.innerHTML = `É uma unidade básica de execução dentro de um programa. Representa um fluxo de controle independente que pode ser executado concorrentemente com outros fluxos de controle dentro do mesmo processo.
+        mensagem.innerHTML = `É uma unidade básica de execução dentro de um programa. Representa um fluxo de controle independente que pode ser executado concorrentemente com outros fluxos de controle dentro do mesmo processo.
 É semelhante a um "mini programa" dentro de um programa maior. Cada um tem seu próprio contador de programa, pilha de execução e contexto de registradores, o que permite que ela execute instruções de forma independente.
 `
 
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_5(){
+    function dica_5() {
 
-mensagem.innerHTML = ` É projetado para oferecer desempenho sólido, embora seja posicionado um degrau abaixo em termos de performance em comparação com a série i7.`
+        mensagem.innerHTML = ` É projetado para oferecer desempenho sólido, embora seja posicionado um degrau abaixo em termos de performance em comparação com a série i7.`
 
-style_mensagem()
-}
+        style_mensagem()
+    }
 
-function dica_6(){
+    function dica_6() {
 
-mensagem.innerHTML = `É um tipo de memória de computador que permite a gravação e o armazenamento de dados de forma permanente. Ao contrário da memória RAM, essa é uma memória somente leitura, o que significa que os dados nela armazenados não podem ser alterados ou apagados facilmente. Esse é um tipo de memória não volátil, o que significa que os dados armazenados nela não são perdidos quando a energia é desligada. 
+        mensagem.innerHTML = `É um tipo de memória de computador que permite a gravação e o armazenamento de dados de forma permanente. Ao contrário da memória RAM, essa é uma memória somente leitura, o que significa que os dados nela armazenados não podem ser alterados ou apagados facilmente. Esse é um tipo de memória não volátil, o que significa que os dados armazenados nela não são perdidos quando a energia é desligada. 
 `
 
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_7(){
+    function dica_7() {
 
-mensagem.innerHTML = `Conhecida como um processador, funciona como o cérebro da sua máquina, responsável pelo processamento de dados e execução dos programas.
+        mensagem.innerHTML = `Conhecida como um processador, funciona como o cérebro da sua máquina, responsável pelo processamento de dados e execução dos programas.
 `
 
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_8(){
+    function dica_8() {
 
-mensagem.innerHTML = `São unidades de armazenamento de alta velocidade dentro da UC e são cruciais para o funcionamento e a eficiência do processador. Eles permitem que a UC armazene e manipule dados e instruções de forma rápida e eficiente durante o processamento.`
+        mensagem.innerHTML = `São unidades de armazenamento de alta velocidade dentro da UC e são cruciais para o funcionamento e a eficiência do processador. Eles permitem que a UC armazene e manipule dados e instruções de forma rápida e eficiente durante o processamento.`
 
-style_mensagem()
-}
-
-
-function dica_9(){
-
-mensagem.innerHTML = `É uma entrada de controle de muitos circuitos integrados, como chips de memória, permitindo ativar ou desativar o circuito. Quando ativo, o componente pode ser endereçado; quando não está, o componente está no chamado modo de espera.`
-
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_10(){
+    function dica_9() {
 
-mensagem.innerHTML = `Essa função envia ou recebe dados da memória ram.`
+        mensagem.innerHTML = `É uma entrada de controle de muitos circuitos integrados, como chips de memória, permitindo ativar ou desativar o circuito. Quando ativo, o componente pode ser endereçado; quando não está, o componente está no chamado modo de espera.`
 
-style_mensagem()
-}
-
-
-function dica_11(){
-
-mensagem.innerHTML = `É uma terminologia usada para descrever um tipo de processador que possui dois núcleos de processamento independentes em um único chip. Um núcleo de processamento é uma unidade dentro de um processador que executa as instruções e realiza os cálculos necessários para executar tarefas no computador.`
-
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_12(){
+    function dica_10() {
 
-mensagem.innerHTML = `É o método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória. Basicamente, trabalha com transferência de dados entre o computador e dispositivos de entrada e saída. `
+        mensagem.innerHTML = `Essa função envia ou recebe dados da memória ram.`
 
-style_mensagem()
-}
-
-
-function dica_13(){
-
-mensagem.innerHTML = `Um circuito digital responsável pelas operações lógicas e aritméticas no processador de um computador.`
-
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_14(){
+    function dica_11() {
 
-mensagem.innerHTML = `É enviado um endereço para memória ram perguntando: “Para onde os dados devem ir, qual o seu destino?”Essa função  apenas envia informações em uma direção, do processador para a memória ram. `
+        mensagem.innerHTML = `É uma terminologia usada para descrever um tipo de processador que possui dois núcleos de processamento independentes em um único chip. Um núcleo de processamento é uma unidade dentro de um processador que executa as instruções e realiza os cálculos necessários para executar tarefas no computador.`
 
-style_mensagem()
-}
-
-
-function dica_15(){
-
-mensagem.innerHTML = `Um tipo de tecnologia de memória não volátil que é amplamente utilizada em dispositivos eletrônicos, como computadores, smartphones, câmeras digitais, pen drives, cartões de memória e muitos outros dispositivos. Essa memória é baseada em células de memória flash, que são dispositivos eletrônicos capazes de reter informações mesmo sem energia elétrica. `
-
-style_mensagem()
-}
+        style_mensagem()
+    }
 
 
-function dica_16(){
+    function dica_12() {
 
-mensagem.innerHTML = `Esses processadores da Intel são conhecidos por terem múltiplos núcleos de processamento, o que significa que podem executar várias tarefas simultaneamente. Além disso, eles também possuem tecnologias como o Hyper-Threading, que permite que cada núcleo execute duas threads, proporcionando um aumento de desempenho em tarefas que podem se beneficiar da paralelização.`
+        mensagem.innerHTML = `É o método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória. Basicamente, trabalha com transferência de dados entre o computador e dispositivos de entrada e saída. `
 
-style_mensagem()
-}
-
-
-function dica_17(){
-
-mensagem.innerHTML = `É uma terminologia usada para descrever um tipo de processador que possui quatro núcleos de processamento independentes em um único chip. Assim como no caso do dual core, cada núcleo de processamento é uma unidade dentro do processador que executa instruções e realiza cálculos.`
-
-style_mensagem()
-}
-
-function style_mensagem(){
-
-    document.getElementById('mensagem').style.backgroundColor = 'rgba(207, 155, 204)' 
-    document.getElementById('mensagem').style.borderRadius = '25px'
-    document.getElementById('mensagem').style.padding = '20px'
+        style_mensagem()
+    }
 
 
-}
+    function dica_13() {
+
+        mensagem.innerHTML = `Um circuito digital responsável pelas operações lógicas e aritméticas no processador de um computador.`
+
+        style_mensagem()
+    }
+
+
+    function dica_14() {
+
+        mensagem.innerHTML = `É enviado um endereço para memória ram perguntando: “Para onde os dados devem ir, qual o seu destino?”Essa função  apenas envia informações em uma direção, do processador para a memória ram. `
+
+        style_mensagem()
+    }
+
+
+    function dica_15() {
+
+        mensagem.innerHTML = `Um tipo de tecnologia de memória não volátil que é amplamente utilizada em dispositivos eletrônicos, como computadores, smartphones, câmeras digitais, pen drives, cartões de memória e muitos outros dispositivos. Essa memória é baseada em células de memória flash, que são dispositivos eletrônicos capazes de reter informações mesmo sem energia elétrica. `
+
+        style_mensagem()
+    }
+
+
+    function dica_16() {
+
+        mensagem.innerHTML = `Esses processadores da Intel são conhecidos por terem múltiplos núcleos de processamento, o que significa que podem executar várias tarefas simultaneamente. Além disso, eles também possuem tecnologias como o Hyper-Threading, que permite que cada núcleo execute duas threads, proporcionando um aumento de desempenho em tarefas que podem se beneficiar da paralelização.`
+
+        style_mensagem()
+    }
+
+
+    function dica_17() {
+
+        mensagem.innerHTML = `É uma terminologia usada para descrever um tipo de processador que possui quatro núcleos de processamento independentes em um único chip. Assim como no caso do dual core, cada núcleo de processamento é uma unidade dentro do processador que executa instruções e realiza cálculos.`
+
+        style_mensagem()
+    }
+
+    function style_mensagem() {
+
+        document.getElementById('mensagem').style.backgroundColor = 'rgba(207, 155, 204)'
+        document.getElementById('mensagem').style.borderRadius = '25px'
+        document.getElementById('mensagem').style.padding = '20px'
+        document.getElementById('mensagem').style.fontSize = '1.1rem'
+        document.getElementById('mensagem').style.boxShadow = '0px 8px 15px rgba(0, 0, 0, 0.1)'
+        document.getElementById('mensagem').style.lineHeight = '1.3'
+
+
+
+    }
 
 </script>
