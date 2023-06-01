@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 section{
     display: flex;
     align-items: center;
@@ -38,4 +40,25 @@ table tr td input{
 
 .nmr{
     text-align: center;
+}
+
+.content_mensagem{
+
+    display: flex;
+
+
+}
+
+.container_mensagem{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensagem{
+
+    display: flex;
+    width: 50%;
 }
