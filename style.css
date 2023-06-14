@@ -4,12 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: rgb(7, 141, 117);
-    background: rgb(123, 170, 204, 0.6);
+    background: rgba(125, 136, 144, 0.6);
 }
 
-.header{
+.header {
     width: 100%;
     height: 80px;
     background-color: rgb(100, 62, 188, 0.8);
@@ -50,7 +50,7 @@ table tr td input {
     width: 30vw;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
     color: #fff;
 
@@ -92,7 +92,7 @@ input {
     border: #1A1A1A solid 1.4px;
 }
 
-h1{
+h1 {
     margin-left: 4%
 }
 
@@ -100,16 +100,18 @@ h1{
 button {
     appearance: none;
     background-color: transparent;
-    border: 0.125em solid #1A1A1A;
     border-radius: 0.9375em;
     border-radius: 10px;
-    width: 55px;
-    font-size: 20px;
+    width: 58px;
+    font-size: 22px;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     cursor: pointer;
+    border: none;
+    background-color: #643ebc;
+    color: #fff;
 }
 
 button:disabled {
@@ -118,7 +120,7 @@ button:disabled {
 
 button:hover {
     color: #fff;
-    background-color: #643ebc;
+    background-color: #1e094f;
     box-shadow: #643ebc 0 8px 15px;
     transform: translateY(-2px);
 }
