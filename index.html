@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caça de palavras</title>
+    <title>Cruzadinha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,9 +16,6 @@
         <div class="container">
             <div class="header">
                 <h2>Cruzadinha</h2>
-                <h4>Para ler as instruções clique nos número e depois de todos os quadrados preenchidos 
-                    clique no botão verificar
-                </h4>
             </div>
             
             <div class="content">
@@ -28,9 +25,11 @@
                     <div class="content_mensagem">
                         <div class="container_mensagem">
                             <div id="mensagem">
+                                &nbsp;&nbsp;Para ler as instruções clique nos número e depois de todos os quadrados preenchidos 
+                    clique no botão verificar
                             </div>
-
                         </div>
+                        <button onclick="vericarJogo()" id="verificar">Verificar</button>
                     </div>
 
                     <table id="table">
@@ -472,11 +471,6 @@
                 </div>
 
     </section>
-    <button onclick="vericarJogo()" id="verificar">Verificar</button>
-
-
-
-
 </body>
 
 </html>
@@ -765,12 +759,13 @@
 
     function style_mensagem() {
 
-        document.getElementById('mensagem').style.backgroundColor = 'rgba(207, 155, 204)'
+        document.getElementById('mensagem').style.backgroundColor = '#643ebc'
         document.getElementById('mensagem').style.borderRadius = '25px'
         document.getElementById('mensagem').style.padding = '20px'
-        document.getElementById('mensagem').style.fontSize = '1.1rem'
+        document.getElementById('mensagem').style.fontSize = '1.2rem'
         document.getElementById('mensagem').style.boxShadow = '0px 8px 15px rgba(0, 0, 0, 0.1)'
         document.getElementById('mensagem').style.lineHeight = '1.3'
+        document.getElementById('mensagem').style.color = '#fff'
 
 
 

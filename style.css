@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(7, 141, 117);
-    background: rgba(125, 136, 144, 0.6);
+    background: rgba(173, 181, 186, 0.6);
 }
 
 .header {
@@ -39,10 +39,16 @@ section {
 }
 
 table tr td input {
-    width: 70px;
-    height: 20px;
+    width: 55px;
+    height: 25px;
     text-align: center;
     font-size: 18px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+table {
+    margin-top: 2%;
 }
 
 
@@ -70,14 +76,16 @@ h2 {
 
 .content_mensagem {
     display: flex;
+    flex-direction: column;
 }
 
 .container_mensagem {
-
     display: flex;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    margin-top: -30%;
+    margin-left: -10%;
 }
 
 #mensagem {
@@ -89,7 +97,7 @@ input {
     /* width: 60px;
     padding-left: 7px;
     padding-top: 2px; */
-    border: #1A1A1A solid 1.4px;
+    border: #1A1A1A solid 1.8px;
 }
 
 h1 {
@@ -114,6 +122,8 @@ button {
     color: #fff;
 }
 
+/* 'rgba(207, 155, 204)' */
+
 button:disabled {
     pointer-events: none;
 }
@@ -132,7 +142,31 @@ button:active {
 
 #verificar {
     width: 100px;
-    margin-left: 3%;
+    margin-left: 30%;
     padding: 10px;
-    margin-top: -3%;
+    margin-top: 10%;
+    /* position: fixed; */
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #643ebc;
+    border-radius: 8px;
+}
+
+#mensagem{
+    background-color: #643ebc;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.3;
+    color: #fff;
 }
